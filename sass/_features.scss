@@ -1,0 +1,39 @@
+.features {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+
+    display: grid;
+    // this is default so no need to specify
+    // grid-template-rows: auto auto;   
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: subgrid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+    gap: 6rem;
+    align-items: start;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 1.5rem 2.5rem;
+
+    &-icon{
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        // this -1 is for explicit grid line, and if do define an explicit  grid this won't work as expected
+        // grid-row: 1 / -1;
+        grid-row: 1 / span 2;
+
+        transform: translateY(-1rem);
+    }
+
+    &-text{
+        font-size: 1.7rem;
+    }
+}
+
+.feature-1 {
+    // grid-column: center-start / col-end 1;
+}
