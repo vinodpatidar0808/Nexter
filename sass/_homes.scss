@@ -34,15 +34,14 @@
     }
 
     &-name {
-        width: 80%;
-        justify-self: center;
-        align-self: end;
-        transform: translateY(50%);
-
-
-        z-index: 3;
         grid-row: 1 / 2;
         grid-column: 1 / -1;
+        align-self: end;
+        justify-self: center;
+        width: 80%;
+        transform: translateY(50%);
+
+        z-index: 3;
         font-family: $font-display;
         font-size: 1.6rem;
         text-align: center;

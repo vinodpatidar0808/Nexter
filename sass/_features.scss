@@ -11,14 +11,21 @@
 
     gap: 6rem;
     align-items: start;
+
+    // this is how to add support for new features, you can check caniuse  for feature supports in different browsers
+    /*
+    @supports(display: grid){
+        // grid related code here
+    }
+    */
 }
 
-.feature{
+.feature {
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 1.5rem 2.5rem;
 
-    &-icon{
+    &-icon {
         fill: $color-primary;
         width: 4.5rem;
         height: 4.5rem;
@@ -29,7 +36,7 @@
         transform: translateY(-1rem);
     }
 
-    &-text{
+    &-text {
         font-size: 1.7rem;
     }
 }
